@@ -1,0 +1,24 @@
+@font-face {
+  font-family: AttilaSansClassic;
+  src: url(AttilaSansClassic-Regular.woff2) format('woff2');
+  src: url(AttilaSansClassic-Regular.woff) format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: AttilaSansClassic;
+  src: url(AttilaSansClassicTrial-Medium.woff2) format('woff2');
+  src: url(AttilaSansClassicTrial-Medium.woff) format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: AttilaSansClassic;
+  src: url(AttilaSansClassic-Semibold.woff2) format('woff2');
+  src: url(AttilaSansClassic-Semibold.woff) format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: AttilaSansClassic;
+  src: url(AttilaSansClassic-Black.woff2) format('woff2');
+  src: url(AttilaSansClassic-Black.woff) format('woff');
+  font-weight: 900;
+}

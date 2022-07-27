@@ -1,24 +1,45 @@
 # hello_ep
 
-## Project setup
+개발환경
+
+- Vue.js
+
+필요 요소
+
+- nodejs https://nodejs.org/ko/
+- Vue cli https://cli.vuejs.org/guide/installation.html
+
+## node modules 설치
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 로컬 서버 시작
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Firebase 배포
 
-### Lints and fixes files
-```
-npm run lint
-```
+테스트 서버로 Firebase(https://console.firebase.google.com/)로 배포했습니다.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 배포 주소
+
+https://hello-ep-test.web.app/
+
+### 배포 방법
+
+- 빌드 : npm run build
+- 배포 : firebase deploy
+
+### Github 주소
+
+https://github.com/seoro-malgm/hello_ep_test
+
+### 연락처
+
+https://seoro-malgm.me/
+010-9908-9658
+seoromalgm@kakao.com

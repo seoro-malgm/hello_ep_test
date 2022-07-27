@@ -1,0 +1,239 @@
+<template>
+  <nav id="gnb">
+    <b-row class="mx-0" align-v="start">
+      <b-col class="px-0" cols="2">
+        <ul>
+          <li v-for="(item, i) in links" :key="i">
+            <router-link class="router-link" :to="item.url">{{ item.name }}</router-link>
+          </li>
+        </ul>
+      </b-col>
+      <b-col class="px-0" cols="2">
+        <h1 class="logo">
+          <!-- <img :src="require('@/assets/img/main logo@2x.png')" alt="" /> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="303.145" height="60.438" viewBox="0 0 303.145 60.438">
+            <g id="main_logo" data-name="main logo" style="mix-blend-mode: exclusion; isolation: isolate">
+              <path
+                id="패스_1"
+                data-name="패스 1"
+                d="M846.475,1676.173l-155.819,11.152L548.53,1676.658l6.383-41.692,229.792-8.078,66.971,12.2Z"
+                transform="translate(-548.53 -1626.887)"
+                fill="#fff"
+              />
+              <g id="그룹_9" data-name="그룹 9" transform="translate(17.324 14.138)">
+                <g id="그룹_1" data-name="그룹 1" transform="translate(0 0.347)">
+                  <path
+                    id="패스_2"
+                    data-name="패스 2"
+                    d="M634.425,1693.882H647.15v-17.028c0-3.224-.849-5.747-2.52-7.5a9.113,9.113,0,0,0-6.894-2.627,12.133,12.133,0,0,0-5.266,1.111,16.745,16.745,0,0,0-4.705,3.559l-.443.458-.333-.542c-1.893-3.086-4.742-4.587-8.708-4.587a11.064,11.064,0,0,0-8.348,3.576l-.85.9v-2.682a40.452,40.452,0,0,1-13.523.02v25.341h13.523v-18.6l.207-.145a5.156,5.156,0,0,1,2.936-1.038,2.937,2.937,0,0,1,2.334,1.005,3.882,3.882,0,0,1,.831,2.606v16.172h12.724v-18.648l.21-.145a5.162,5.162,0,0,1,2.932-.99,2.971,2.971,0,0,1,2.3.984,3.811,3.811,0,0,1,.862,2.626Z"
+                    transform="translate(-595.559 -1666.728)"
+                  />
+                </g>
+                <g id="그룹_2" data-name="그룹 2" transform="translate(53.502 0.347)">
+                  <path
+                    id="패스_3"
+                    data-name="패스 3"
+                    d="M749.978,1679.678a10.038,10.038,0,0,0-6.674,2.142,6.781,6.781,0,0,0-2.5,5.481,6.422,6.422,0,0,0,2.011,4.877,6.952,6.952,0,0,0,5.056,1.936,11.388,11.388,0,0,0,6.775-2.224l.779-.563v2.556h13.523v-14.945c0-4.128-1.129-7.226-3.358-9.206s-5.813-3-10.608-3a28.665,28.665,0,0,0-13.45,3.117v7.3a17.479,17.479,0,0,1,7.676-1.913,7.617,7.617,0,0,1,4.5,1.182,4,4,0,0,1,1.714,3.425v.634l-.619-.167A18.638,18.638,0,0,0,749.978,1679.678Zm2.7,9.776a3.632,3.632,0,0,1-2.5-.89,2.913,2.913,0,0,1-1.018-2.258,2.662,2.662,0,0,1,.969-2.13c1.1-.921,2.822-1.037,4.959-.322l.333.112v4.463l-.173.145A3.889,3.889,0,0,1,752.677,1689.453Z"
+                    transform="translate(-740.799 -1666.728)"
+                  />
+                </g>
+                <g id="그룹_3" data-name="그룹 3" transform="translate(84.191 0.347)">
+                  <path
+                    id="패스_4"
+                    data-name="패스 4"
+                    d="M843.9,1693.882h12.725v-16.844c0-3.42-.842-6.024-2.505-7.737s-4.089-2.573-7.235-2.573a11.41,11.41,0,0,0-8.4,3.583l-.844.859v-2.648a65.6,65.6,0,0,1-13.522.02v25.341h13.522v-18.6l.21-.145a5.093,5.093,0,0,1,2.886-.99c1.445,0,3.166.687,3.166,3.959Z"
+                    transform="translate(-824.111 -1666.728)"
+                  />
+                </g>
+                <g id="그룹_4" data-name="그룹 4" transform="translate(119.19 2.141)">
+                  <path
+                    id="패스_5"
+                    data-name="패스 5"
+                    d="M919.215,1702.546c4.294,2.534,9.757,3.818,16.242,3.818,5.014,0,8.752-1.075,11.112-3.2s3.537-5.518,3.537-10.126v-21.381h-15.8a47.833,47.833,0,0,0-7.237.374,11.258,11.258,0,0,0-3.767,1.363,8.5,8.5,0,0,0-2.924,3.149,10.261,10.261,0,0,0-1.26,5.215,9.552,9.552,0,0,0,2.954,7.338,11.429,11.429,0,0,0,8.032,2.74,10.634,10.634,0,0,0,5.7-1.43l.62-.386.125.711a4.727,4.727,0,0,1,.078.826c0,2.689-2.14,4.051-6.359,4.051a16.548,16.548,0,0,1-11.056-4.355Zm14.835-16.431a3.643,3.643,0,0,1-2.644-.985,3.507,3.507,0,0,1-1.014-2.626c0-1.818.927-3.982,5.347-3.982h.82v6.737l-.181.144A3.609,3.609,0,0,1,934.05,1686.115Z"
+                    transform="translate(-919.121 -1671.661)"
+                  />
+                </g>
+                <g id="그룹_5" data-name="그룹 5" transform="translate(153.14 0.347)">
+                  <path
+                    id="패스_6"
+                    data-name="패스 6"
+                    d="M1011.283,1693.882h13.523v-9.916c0-3.409.784-5.794,2.334-7.089l.354-.3.319.334a7.3,7.3,0,0,0,5.511,2.4,6.028,6.028,0,0,0,4.519-1.742,6.219,6.219,0,0,0,1.726-4.608,6.02,6.02,0,0,0-6.245-6.234c-3.321,0-5.8,1.981-7.577,6.055l-.941,2.158v-6.42a42.274,42.274,0,0,1-13.523,0Z"
+                    transform="translate(-1011.283 -1666.728)"
+                  />
+                </g>
+                <g id="그룹_6" data-name="그룹 6" transform="translate(180.976 0)">
+                  <path
+                    id="패스_7"
+                    data-name="패스 7"
+                    d="M1101.777,1665.773a15.186,15.186,0,0,0-10.786,3.9,13.271,13.271,0,0,0-4.143,10.1,13.075,13.075,0,0,0,4.2,10.059,16.973,16.973,0,0,0,21.577-.01,14.285,14.285,0,0,0,0-20.144A15.3,15.3,0,0,0,1101.777,1665.773Zm0,17.375a3.671,3.671,0,1,1,0-7.341,3.652,3.652,0,0,1,2.67,1.023,3.9,3.9,0,0,1,0,5.295A3.65,3.65,0,0,1,1101.777,1683.148Z"
+                    transform="translate(-1086.849 -1665.773)"
+                  />
+                </g>
+                <g id="그룹_7" data-name="그룹 7" transform="translate(209.466 2.141)">
+                  <path
+                    id="패스_8"
+                    data-name="패스 8"
+                    d="M1175.361,1697.022h10.083l11.2-25.361h-13.433l-2.771,6.289-2.818-6.289h-13.436Z"
+                    transform="translate(-1164.189 -1671.661)"
+                  />
+                </g>
+                <g id="그룹_8" data-name="그룹 8" transform="translate(240.621 0)">
+                  <path
+                    id="패스_9"
+                    data-name="패스 9"
+                    d="M1263.082,1665.773a14.369,14.369,0,0,0-10.348,3.824,14.358,14.358,0,0,0,.352,20.179c2.881,2.6,6.756,3.914,11.522,3.914,5.708,0,10.155-1.965,13.216-5.842a10.192,10.192,0,0,1-2.623-2.056,12.54,12.54,0,0,1-4.726.853,8.291,8.291,0,0,1-4.562-1.284,7.1,7.1,0,0,1-2.869-3.573l-.243-.652h15.019a20.388,20.388,0,0,0-.955-6.308A12.976,12.976,0,0,0,1273.9,1670a13.28,13.28,0,0,0-4.777-3.15A16.606,16.606,0,0,0,1263.082,1665.773Zm6.9,11.442h-7.835v-.484a5.343,5.343,0,0,1,1.105-3.618,3.578,3.578,0,0,1,5.551.061,5.937,5.937,0,0,1,1.155,3.535Z"
+                    transform="translate(-1248.765 -1665.773)"
+                  />
+                </g>
+                <path
+                  id="패스_10"
+                  data-name="패스 10"
+                  d="M1066.2,1673.221a6.378,6.378,0,1,0-6.378,6.294A6.338,6.338,0,0,0,1066.2,1673.221Z"
+                  transform="translate(-884.773 -1666.506)"
+                />
+              </g>
+            </g>
+          </svg>
+        </h1>
+      </b-col>
+      <b-col class="px-0" cols="2" offset="5">
+        <b-btn variant="text text-white p-0 btn-book" @click="toggleBook = !toggleBook">book</b-btn>
+      </b-col>
+      <b-col class="px-0 btn-lang-group" cols="1">
+        <b-btn variant="text btn-lang p-0"> <span>KOR</span> </b-btn>
+        <span class="text-white mx-2">|</span>
+        <b-btn variant="text btn-lang p-0"> <span>ENG</span> </b-btn>
+      </b-col>
+    </b-row>
+    <div class="w-100 min-vh-100 toggle-book" v-show="toggleBook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1282.446" height="737.416" viewBox="0 0 1282.446 737.416">
+        <path
+          d="M1808.977,2228.232,1149.79,2364.3,548.53,2234.146l27-508.693,972.126-98.566,283.317,148.863Z"
+          transform="translate(-548.53 -1626.887)"
+          fill="#fff"
+          style="mix-blend-mode: exclusion; isolation: isolate"
+        />
+      </svg>
+
+      <b-btn variant="text position-fixed" :style="{ top: '1rem', right: '1rem', color: 'white' }" @click="toggleBook = false">X</b-btn>
+      <section class="section-co-living">co-living</section>
+      <section class="section-stay">stay</section>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      links: [
+        {
+          name: "Location",
+          url: "/",
+        },
+        {
+          name: "Journal",
+          url: "/",
+        },
+        {
+          name: "About",
+          url: "/",
+        },
+      ],
+      toggleBook: false,
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+#gnb {
+  display: flex;
+  align-items: center;
+  padding: 24px 22px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  font-weight: 900;
+  .router-link {
+    color: #fff;
+    font-size: 22px;
+    mix-blend-mode: exclusion;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .logo {
+    .group-path {
+      mix-blend-mode: exclusion;
+    }
+  }
+  .btn-book {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    padding-bottom: 2px;
+    position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      mix-blend-mode: exclusion;
+    }
+  }
+  .btn-lang-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    span {
+      color: white;
+      font-weight: 900;
+      font-size: 20px;
+      mix-blend-mode: exclusion;
+    }
+  }
+}
+
+.toggle-book {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: stretch;
+  svg {
+    position: fixed;
+    z-index: 1990;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    mix-blend-mode: exclusion;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    &.section-co-living {
+      background-color: white;
+    }
+    &.section-stay {
+      background-color: black;
+    }
+  }
+}
+</style>

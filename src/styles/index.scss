@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+
+// 폰트 fonts
+@font-face {
+  font-family: AttilaSansClassic;
+  src: local("AttilaSansClassic Black"), local("AttilaSansClassic-Black"), url("../assets/fonts/AttilaSansClassic-Black.woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: AttilaSansClassic;
+  src: local("AttilaSansClassic Semibold"), local("AttilaSansClassic-Semibold"), url("../assets/fonts/AttilaSansClassic-Semibold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: AttilaSansClassic;
+  src: local("AttilaSansClassic Medium"), local("AttilaSansClassic-Medium"), url("../assets/fonts/AttilaSansClassic-Medium.woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: AttilaSansClassic;
+  src: local("AttilaSansClassic Regular"), local("AttilaSansClassic-Regular"), url("../assets/fonts/AttilaSansClassic-Regular.woff");
+  font-weight: 400;
+}
+
+// 전체 앱 설정
+#app {
+  font-family: AttilaSansClassic, "Noto Sans KR", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+// 리스트 스타일 초기화
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// 칼럼 row
+.row {
+  width: 100%;
+}
+
+// 폰트 굵기
+@for $var from 2 through 9 {
+  .fw-#{$var}#{"00"} {
+    font-weight: #{$var}#{"00"} !important;
+  }
+}
+
+// 폰트 사이즈
+$font-size: (14, 16, 18, 20, 38);
+@each $var in $font-size {
+  .text-#{$var} {
+    font-size: #{$var}px !important;
+  }
+  .btn.text-#{$var} {
+    font-size: #{$var}px !important;
+    * {
+      font-size: #{$var}px !important;
+    }
+  }
+}
+
+p {
+  line-height: 1.375;
+}
+
+// 부트스트랩 theme-colors
+$primary: #000000;
+$secondary: #00b453;
+$light: #f4f4f4;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+) !default;
+
+// 테마컬러 사용을 위해 부트스트랩 css 불러오기
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import "/node_modules/bootstrap-vue/src/index.scss";
