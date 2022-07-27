@@ -23,7 +23,7 @@ npm run serve
 
 ### Firebase 배포
 
-테스트 서버로 Firebase(https://console.firebase.google.com/)로 배포했습니다.
+테스트 서버로 Firebase 사용하여 ( https://console.firebase.google.com/ ) 로 배포했습니다.
 
 ### 배포 주소
 
